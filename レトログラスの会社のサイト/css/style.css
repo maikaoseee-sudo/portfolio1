@@ -1,0 +1,611 @@
+@charset "utf-8";
+
+/*--------- index.html -----------*/
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.noto-serif jp-regular {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #f5eee3;
+  min-width: 100%;
+  font-family: "Noto Serif JP", serif;
+}
+
+h2 {
+  color: #4c2d18;
+  animation: fadeIn 2.0s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  margin-bottom: 100px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+h3 {
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #4c2d18;
+  animation: fadeIn 2.0s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+p {
+  line-height: 1.5;
+  color: #4c2d18;
+  margin-bottom: 100px;
+}
+
+img {
+  object-fit: cover;
+}
+
+/*--------- wrapper -----------*/
+
+.wrapper {
+  width: 100%;
+}
+
+/*--------- header -----------*/
+
+header {
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #f5eee3a7;
+}
+
+header img {
+  width: 200px;
+  height: 70px;
+}
+
+header h1 {
+  margin-top: 10px;
+}
+
+header img:hover {
+  opacity: 0.7;
+}
+
+/*--------- nav.global -----------*/
+
+.global {
+  width: 680px;
+  line-height: 26px;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.global ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.global li a {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 2.0rem;
+}
+
+.global li:last-child a {
+  padding-right: 0;
+  border-right: none;
+  color: #cc2421;
+}
+
+.global li a:hover span {
+  opacity: 0.7;
+}
+
+.home {
+  background-image: url(../img/retro_1.jpg);
+  background-color: #ffffff32;
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  margin: 0 auto 100px auto;
+  background-blend-mode: overlay;
+}
+
+.home_content h2 {
+  color: #ffffff;
+  font-size: 6rem;
+  padding-top: 300px;
+  text-align: center;
+  text-shadow: 2px 2px 3px #4a4a4a;
+  font-family: ab-lineboard-bold, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  
+}
+
+
+/*--------- main -----------*/
+
+main {
+  text-align: center;
+}
+
+main .main_images {
+  display: flex;
+  justify-content: center;
+}
+
+main h2 {
+  font-size: 5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+main p {
+  font-size: 1.8rem;
+}
+
+/*--------- About -----------*/
+
+#About {
+  margin-bottom: 100px;
+}
+
+#About h2 {
+  animation-delay: 1.5s;
+}
+
+/*--------- Brands -----------*/
+
+#Brands {
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f7d4bd calc(100% - 1px)),
+    linear-gradient(90deg, transparent calc(100% - 1px), #f7d4bd calc(100% - 1px));
+  background-size: 16px 16px;
+  background-repeat: repeat;
+  background-position: center;
+  padding: 100px;
+}
+
+.second_content {
+  margin-bottom: 50px;
+}
+
+#Brands h2 {
+  animation-delay: 2.5s;
+}
+
+
+.second_content p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*--------- Campany -----------*/
+
+#company {
+  background-color: #9d6231;
+}
+
+.third_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company_images {
+  width: 750px;
+  height: auto;
+}
+
+.company_content {
+  padding: 0 150px;
+  text-align: left;
+}
+
+.company_content p {
+  color: #f5eee3;
+  margin-bottom: 10px;
+}
+
+.company_content h2 {
+  color: #f5eee3;
+  animation-delay: 3.5s;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.company_name h3 {
+  color: #f5eee3;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.company_btn {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 10px 100px;
+  margin-top: 30px;
+  text-decoration: none;
+  background-color: #f5eee3;
+  border-radius: 50px;
+  font-weight: bold;
+  width: 150px;
+  text-align: center;
+}
+
+.company_btn:hover {
+  opacity: 0.7;
+}
+
+.company_btn a {
+  color: #9d6231;
+}
+
+/*--------- footer -----------*/
+
+footer {
+  background-color: #4c2d18;
+  color: #f5eee3;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+footer p {
+  background-image: url(../images/logo_mark_w.svg);
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+
+
+footer .content p:hover {
+  opacity: 0.7;
+}
+
+footer p img {
+  width: 100%;
+  height: 100px;
+}
+
+footer .sns img {
+  width: 40px;
+  height: auto;
+}
+
+footer .sns {
+  padding-left: 20px;
+}
+
+.sns ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 50px;
+}
+
+.sns ul li:hover {
+  opacity: 0.7;
+}
+
+/*--------- nav.local -----------*/
+
+.local ul li {
+  display: inline-block;
+  text-align: center;
+}
+
+.local ul li a {
+  font-size: 2rem;
+  color: #f5eee3;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.local ul li:hover {
+  opacity: 0.7;
+}
+
+/*--------- hr -----------*/
+
+hr {
+  height: 1px;
+  background-color: #f5eee3;
+  border: none;
+  margin-top: 20px;
+}
+
+/*--------- small -----------*/
+
+small {
+  display: block;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 40px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+/*--------- philosophy.html -----------*/
+
+#philosophy {
+  background-image: url(../img/企業理念.png);
+  background-size: cover;
+  mix-blend-mode: multiply;
+  padding: 60px;
+  height: 550px;
+  width: auto;
+  align-content: center;
+  text-shadow: 2px 2px 30px #4c2d18;
+  font-family: ab-lineboard-bold, sans-serif;
+font-style: normal;
+font-weight: 400;
+}
+
+#philosophy .first_content h2 {
+  color: #fff;
+  margin: 70px 0 60px 0;
+}
+
+#philosophy .first_content p {
+  color: #4c2d18;
+  font-size: 2.5rem;
+  line-height: 2;
+  color: #fff;
+}
+
+/*--------- Message -----------*/
+
+#Message {
+  margin-top: 100px;
+}
+
+#Message p {
+  line-height: 2;
+}
+
+/*--------- history -----------*/
+
+#history {
+  margin-top: 250px;
+}
+
+#history .history_1 .history_images {
+  height: auto;
+  margin-right: 150px;
+  animation: fuwafuwa 3s ease-in-out infinite alternate;
+  background: url(../img/ico-apple.svg) no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+}
+
+@keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+
+}
+
+
+
+#history .history_1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff5e;
+  margin-bottom: 60px;
+  margin-top: 80px;
+}
+
+#history .history_content {
+  padding: 60px 150px 0px 150px;
+  width: 550px;
+}
+
+#history .history_content h3 {
+  font-size: 3rem;
+  color: #cc2421;
+  font-weight: bold;
+}
+
+#history .history_content p {
+  line-height: 2;
+}
+
+#history .history_2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff5e;
+  margin-bottom: 100px;
+}
+
+#history .history_2 .history_images {
+  width: 500px;
+  height: auto;
+  margin-left: 150px;
+  animation: fuwafuwa 3s ease-in-out infinite alternate;
+  background: url(../img/ico-apple.svg) no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+}
+
+/*--------- business.html -----------*/
+
+#business {
+  margin-top: 150px;
+}
+
+#business img {
+  height: auto;
+  box-shadow:
+    -10px 10px 25px rgba(230, 180, 15, 0.9),
+    10px -10px 25px rgba(8, 131, 161, 0.9)
+}
+
+.business_content {
+  padding: 30px;
+  width: 650px;
+  margin: 50px;
+}
+
+#business .first_business h2 {
+  margin-bottom: 70px;
+}
+
+.business_content h3 {
+  font-size: 3rem;
+  color: #b89355;
+  padding-top: 40px;
+}
+
+.business_content p {
+  text-align: left;
+  padding: 50px;
+  margin-bottom: 0;
+}
+
+.business_1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.business_2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*--------- jobs -----------*/
+
+#jobs {
+  background-color: #ECDFD1;
+  padding: 100px;
+}
+
+.jobs_content {
+  margin-bottom: 30px;
+}
+
+#jobs .main_images img {
+  width: 600px;
+  height: 400px;
+}
+
+.jobs_btn {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 10px 100px;
+  background-color: #4c2d18;
+  border-radius: 50px;
+  font-weight: bold;
+  margin: 50px auto;
+  width: 150px;
+  text-align: center;
+  animation: poyopoyo 2s ease-out infinite;
+  opacity: 1;
+}
+
+@keyframes poyopoyo {
+  0%, 40%, 60%, 80% {
+    transform: scale(1.0);
+  }
+
+  50%, 70% {
+    transform: scale(0.95);
+  }
+}
+
+.jobs_btn a {
+  color: #f5eee3;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.jobs_btn:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+/*スクロールダウン全体の場所*/
+.scrolldown1{
+  /*描画位置※位置は適宜調整してください*/
+position:absolute;
+left:50%;
+bottom:10px;
+  /*全体の高さ*/
+height:50px;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown1 span{
+  /*描画位置*/
+position: absolute;
+left:-30px;
+top: -30px;
+  /*テキストの形状*/
+color: #eee;
+font-size: 2rem;
+letter-spacing: 0.05em;
+}
+
+/* 線の描写 */
+.scrolldown1::after{
+content: "";
+  /*描画位置*/
+position: absolute;
+top: 0;
+  /*線の形状*/
+width: 1px;
+height: 30px;
+background: #eee;
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+animation: pathmove 1.4s ease-in-out infinite;
+opacity:0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove{
+0%{
+  height:0;
+  top:0;
+  opacity: 0;
+}
+30%{
+  height:30px;
+  opacity: 1;
+}
+100%{
+  height:0;
+  top:50px;
+  opacity: 0;
+}
+}
+
